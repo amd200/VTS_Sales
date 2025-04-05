@@ -1,0 +1,77 @@
+﻿@model Books.ViewModels.CustomerViewModel
+
+@{
+    ViewBag.Title = "إدارة العملاء";
+}
+
+<div class="container mt-5">
+    <a href="@Request.UrlReferrer" class="btn btn-secondary  mb-3">رجوع</a>
+
+    <div class="card shadow-lg border-0 rounded">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-4 text-center">
+                @(Model.Id == 0 ? "إضافة عميل جديد" : "تعديل بيانات العميل")
+            </h4>
+
+        </div>
+
+        <div class="card-body p-4">
+            @using (Html.BeginForm("Save", "Customer", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+         
+                    @Html.HiddenFor(x => x.Id)
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        @Html.LabelFor(m => m.FirstName)
+                        @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control w-100" })
+                        @Html.ValidationMessageFor(m => m.FirstName, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        @Html.LabelFor(m => m.LastName)
+                        @Html.TextBoxFor(m => m.LastName, new { @class = "form-control w-100" })
+                        @Html.ValidationMessageFor(m => m.LastName, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        @Html.LabelFor(m => m.Gender)
+                        @Html.EnumDropDownListFor(m => m.Gender, new { @class = "form-select" })
+                        @Html.ValidationMessageFor(m => m.Gender, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        @Html.LabelFor(m => m.Email)
+                        @Html.TextBoxFor(m => m.Email, new { @class = "form-control w-100" })
+                        @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-12 mb-3">
+                        @Html.LabelFor(m => m.Phone)
+                        @Html.TextBoxFor(m => m.Phone, new { @class = "form-control w-100" })
+                        @Html.ValidationMessageFor(m => m.Phone, "", new { @class = "text-danger" })
+                    </div>
+                    <div class="col-md-12 mb-3">
+                        @Html.LabelFor(m => m.Address)
+                        @Html.TextAreaFor(m => m.Address, new { @class = "form-control w-100", rows = 3 })
+                        @Html.ValidationMessageFor(m => m.Address, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success px-4">حفظ</button>
+                </div>
+            }
+        </div>
+    </div>
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+            <strong>@TempData["Message"]</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+</div>
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}

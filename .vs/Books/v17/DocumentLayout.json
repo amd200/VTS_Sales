@@ -1,0 +1,409 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Web\\Books\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|E:\\Web\\Books\\controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:controllers\\invoicecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\viewmodels\\invoicedetailformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:viewmodels\\invoicedetailformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:models\\invoice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|E:\\Web\\Books\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:models\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\resources\\site.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:resources\\site.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\resources\\site.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:resources\\site.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|E:\\Web\\Books\\views\\invoice\\invoiceform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:views\\invoice\\invoiceform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\models\\invoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:models\\invoicedetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\viewmodels\\invoiceformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:viewmodels\\invoiceformviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\migrations\\202504050012309_addcc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:migrations\\202504050012309_addcc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|E:\\Web\\Books\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\viewmodels\\productfromviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:viewmodels\\productfromviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\views\\customer\\customerform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:views\\customer\\customerform.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|E:\\Web\\Books\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\views\\invoice\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:views\\invoice\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|e:\\web\\books\\views\\books\\bookfrom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:views\\books\\bookfrom.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|E:\\Web\\Books\\migrations\\202504041930368_addcolumn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:migrations\\202504041930368_addcolumn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|E:\\Web\\Books\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{C31643BA-91FD-4A39-94CE-96EF1CA35D4E}|Books.csproj|solutionrelative:web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Site.Designer.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\Resources\\Site.Designer.cs",
+              "RelativeDocumentMoniker": "Resources\\Site.Designer.cs",
+              "ToolTip": "E:\\Web\\Books\\Resources\\Site.Designer.cs",
+              "RelativeToolTip": "Resources\\Site.Designer.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAEEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T01:24:53.898Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "InvoiceController.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\Controllers\\InvoiceController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InvoiceController.cs",
+              "ToolTip": "E:\\Web\\Books\\Controllers\\InvoiceController.cs",
+              "RelativeToolTip": "Controllers\\InvoiceController.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAAkwD8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T19:35:20.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Web\\Books\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Web\\Books\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T20:37:46.785Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "InvoiceDetailFormViewModel.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\ViewModels\\InvoiceDetailFormViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\InvoiceDetailFormViewModel.cs",
+              "ToolTip": "E:\\Web\\Books\\ViewModels\\InvoiceDetailFormViewModel.cs",
+              "RelativeToolTip": "ViewModels\\InvoiceDetailFormViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T22:26:24.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Site.resx",
+              "DocumentMoniker": "E:\\Web\\Books\\Resources\\Site.resx",
+              "RelativeDocumentMoniker": "Resources\\Site.resx",
+              "ToolTip": "E:\\Web\\Books\\Resources\\Site.resx",
+              "RelativeToolTip": "Resources\\Site.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-04-04T20:38:15.531Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Book.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "Models\\Book.cs",
+              "ToolTip": "E:\\Web\\Books\\Models\\Book.cs",
+              "RelativeToolTip": "Models\\Book.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAcwBoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T20:21:48.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Category.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "E:\\Web\\Books\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T19:37:47.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Invoice.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\Models\\Invoice.cs",
+              "RelativeDocumentMoniker": "Models\\Invoice.cs",
+              "ToolTip": "E:\\Web\\Books\\Models\\Invoice.cs",
+              "RelativeToolTip": "Models\\Invoice.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA1wA0AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T19:35:06.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "InvoiceForm.cshtml",
+              "DocumentMoniker": "E:\\Web\\Books\\Views\\Invoice\\InvoiceForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Invoice\\InvoiceForm.cshtml",
+              "ToolTip": "E:\\Web\\Books\\Views\\Invoice\\InvoiceForm.cshtml",
+              "RelativeToolTip": "Views\\Invoice\\InvoiceForm.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAB4PW4AAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T19:34:33.028Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "InvoiceDetail.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\Models\\InvoiceDetail.cs",
+              "RelativeDocumentMoniker": "Models\\InvoiceDetail.cs",
+              "ToolTip": "E:\\Web\\Books\\Models\\InvoiceDetail.cs",
+              "RelativeToolTip": "Models\\InvoiceDetail.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAIA/wBAAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T22:21:55.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "InvoiceFormViewModel.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\ViewModels\\InvoiceFormViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\InvoiceFormViewModel.cs",
+              "ToolTip": "E:\\Web\\Books\\ViewModels\\InvoiceFormViewModel.cs",
+              "RelativeToolTip": "ViewModels\\InvoiceFormViewModel.cs",
+              "ViewState": "AgIAABYAAAAA+/////8XwB8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:03:54.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "202504050012309_AddCC.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\Migrations\\202504050012309_AddCC.cs",
+              "RelativeDocumentMoniker": "Migrations\\202504050012309_AddCC.cs",
+              "ToolTip": "E:\\Web\\Books\\Migrations\\202504050012309_AddCC.cs",
+              "RelativeToolTip": "Migrations\\202504050012309_AddCC.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-05T00:12:43.982Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "E:\\Web\\Books\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "E:\\Web\\Books\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T19:41:35.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "E:\\Web\\Books\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAIAwwBUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:46:58.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProductFromViewModel.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\ViewModels\\ProductFromViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\ProductFromViewModel.cs",
+              "ToolTip": "E:\\Web\\Books\\ViewModels\\ProductFromViewModel.cs",
+              "RelativeToolTip": "ViewModels\\ProductFromViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T22:12:35.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
+              "ToolTip": "E:\\Web\\Books\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Controllers\\CustomerController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwAYAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T19:38:57.304Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\Web\\Books\\Views\\Invoice\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Invoice\\Index.cshtml",
+              "ToolTip": "E:\\Web\\Books\\Views\\Invoice\\Index.cshtml",
+              "RelativeToolTip": "Views\\Invoice\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T20:42:42.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CustomerForm.cshtml",
+              "DocumentMoniker": "E:\\Web\\Books\\Views\\Customer\\CustomerForm.cshtml",
+              "RelativeDocumentMoniker": "Views\\Customer\\CustomerForm.cshtml",
+              "ToolTip": "E:\\Web\\Books\\Views\\Customer\\CustomerForm.cshtml",
+              "RelativeToolTip": "Views\\Customer\\CustomerForm.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T21:42:58.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
+              "ToolTip": "E:\\Web\\Books\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T21:33:18.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "BookFrom.cshtml",
+              "DocumentMoniker": "E:\\Web\\Books\\Views\\Books\\BookFrom.cshtml",
+              "RelativeDocumentMoniker": "Views\\Books\\BookFrom.cshtml",
+              "ToolTip": "E:\\Web\\Books\\Views\\Books\\BookFrom.cshtml",
+              "RelativeToolTip": "Views\\Books\\BookFrom.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAACFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-04-04T21:28:00.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Models\\Customer.cs",
+              "ToolTip": "E:\\Web\\Books\\Models\\Customer.cs",
+              "RelativeToolTip": "Models\\Customer.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABEAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T20:19:59.583Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\Web\\Books\\Web.config",
+              "RelativeDocumentMoniker": "Web.config",
+              "ToolTip": "E:\\Web\\Books\\Web.config",
+              "RelativeToolTip": "Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-04-04T19:40:33.208Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "202504041930368_AddColumn.cs",
+              "DocumentMoniker": "E:\\Web\\Books\\Migrations\\202504041930368_AddColumn.cs",
+              "RelativeDocumentMoniker": "Migrations\\202504041930368_AddColumn.cs",
+              "ToolTip": "E:\\Web\\Books\\Migrations\\202504041930368_AddColumn.cs",
+              "RelativeToolTip": "Migrations\\202504041930368_AddColumn.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-04T20:06:36.528Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

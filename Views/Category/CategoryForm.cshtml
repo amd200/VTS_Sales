@@ -1,0 +1,52 @@
+﻿@model Books.ViewModels.CategoryViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+@*<h2> @(Model.Id == 0 ? "Add New Category" : "Edit Category")</h2>*@
+
+
+
+
+@if (TempData["Message"] == null)
+{
+    using (Html.BeginForm("Save", "Category"))
+    {
+        @Html.AntiForgeryToken()
+        if (Model != null)
+        {
+         
+                @Html.HiddenFor(x => x.Id)
+        }
+
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.Name)
+            @Html.TextBoxFor(m => m.Name, new { @class = "form-control" })
+            @Html.ValidationMessageFor(m => m.Name, null, new { @class = "text-danger" })
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(m => m.IsActive)
+            @Html.CheckBoxFor(m => m.IsActive, new { @class = "form-check-input" })
+            @Html.ValidationMessageFor(m => m.IsActive, null, new { @class = "text-danger" })
+        </div>
+
+
+        <button type="submit" class="btn btn-primary">Save</button>
+
+    }
+
+     
+}
+else {
+                {
+                    <h1>@TempData["Message"]</h1>
+                } }
+
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+}

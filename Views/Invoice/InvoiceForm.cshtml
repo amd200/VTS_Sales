@@ -1,0 +1,140 @@
+﻿@model Books.ViewModels.InvoiceFormViewModel
+
+@{
+    ViewBag.Title = "إدارة العملاء";
+}
+
+<div class="container mt-5">
+    <a href="@Request.UrlReferrer" class="btn btn-secondary mb-3">رجوع</a>
+
+    <div class="card shadow-lg border-0 rounded">
+        <div class="card-header bg-primary text-white">
+            <h4 class="mb-4 text-center">
+                إدارة الفاتورة
+            </h4>
+        </div>
+
+        <div class="card-body p-4">
+            @using (Html.BeginForm("Save", "Invoice", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        @Html.LabelFor(m => m.InvoiceDiscount)
+                        @Html.TextBoxFor(m => m.InvoiceDiscount, new { @class = "form-control w-100" })
+                        @Html.ValidationMessageFor(m => m.InvoiceDiscount, "", new { @class = "text-danger" })
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        @Html.LabelFor(m => m.CustomerId)
+                        @Html.DropDownListFor(m => m.CustomerId, Model.Customers, "-- اختر عميل --", new { @class = "form-select" })
+                        @Html.ValidationMessageFor(m => m.CustomerId, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <hr>
+
+                <h5>تفاصيل الفاتورة</h5>
+                <div id="invoiceDetails">
+                    @for (var i = 0; i < Model.InvoiceDetails.Count; i++)
+                    {
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                @Html.LabelFor(m => m.InvoiceDetails[i].ProductId)
+                                @Html.DropDownListFor(m => m.InvoiceDetails[i].ProductId, new SelectList(Model.Products, "Id", "Name"), "-- اختر منتج --", new { @class = "form-select product-dropdown", data_index = i })
+                                @Html.ValidationMessageFor(m => m.InvoiceDetails[i].ProductId, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="col-md-2">
+                                @Html.LabelFor(m => m.InvoiceDetails[i].Price)
+                                @Html.TextBoxFor(m => m.InvoiceDetails[i].Price, new { @class = "form-control price", type = "number", step = "0.01", @readonly = "readonly", data_index = i })
+                                @Html.ValidationMessageFor(m => m.InvoiceDetails[i].Price, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="col-md-2">
+                                @Html.LabelFor(m => m.InvoiceDetails[i].Quantity)
+                                @Html.TextBoxFor(m => m.InvoiceDetails[i].Quantity, new { @class = "form-control quantity", data_index = i })
+                                @Html.ValidationMessageFor(m => m.InvoiceDetails[i].Quantity, "", new { @class = "text-danger" })
+                            </div>
+
+                            <div class="col-md-2">
+                                <button type="button" class="btn btn-danger" onclick="removeInvoiceDetail(this)">حذف</button>
+                            </div>
+                        </div>
+                    }
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="button" class="btn btn-primary" onclick="addInvoiceDetail()">إضافة تفاصيل</button>
+                </div>
+
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-success px-4">حفظ</button>
+                </div>
+            }
+        </div>
+    </div>
+
+    @if (TempData["Message"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show mt-4" role="alert">
+            <strong>@TempData["Message"]</strong>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+</div>
+
+@section Scripts
+{
+    @Scripts.Render("~/bundles/jqueryval")
+    <script>
+        function addInvoiceDetail() {
+            var invoiceDetailsDiv = document.getElementById('invoiceDetails');
+
+            var newDetailRow = document.createElement('div');
+            newDetailRow.classList.add('row', 'mb-3');
+
+            newDetailRow.innerHTML = `
+                <div class="col-md-4">
+                    <label>المنتج</label>
+                    <select class="form-select product-dropdown" data_index="${invoiceDetailsDiv.children.length}">
+                        <option>-- اختر منتج --</option>
+                        @foreach (var product in Model.Products)
+                        {
+                            <option value="@product.Id" data-price="@product.Price">@product.Name</option>
+                        }
+                    </select>
+                </div>
+                <div class="col-md-2">
+                    <label>السعر</label>
+                    <input type="number" name ="price" class="form-control price" step="0.01" readonly>
+                </div>
+                <div class="col-md-2">
+                    <label>الكمية</label>
+                    <input type="number" class="form-control quantity">
+                </div>
+                <div class="col-md-2">
+                    <button type="button" class="btn btn-danger" onclick="removeInvoiceDetail(this)">حذف</button>
+                </div>
+            `;
+
+            invoiceDetailsDiv.appendChild(newDetailRow);
+
+            var newProductDropdown = document.querySelectorAll(".product-dropdown")[document.querySelectorAll(".product-dropdown").length - 1];
+            if (newProductDropdown) {
+                newProductDropdown.addEventListener('change', function () {
+                    var selectedOption = this.options[this.selectedIndex];
+                    var productPrice = selectedOption.getAttribute('data-price');
+                    var priceField = this.closest('.row').querySelector('.price');
+                    priceField.value = productPrice;
+                });
+            }
+        }
+
+        function removeInvoiceDetail(button) {
+            var row = button.closest('.row');
+            row.remove();
+        }
+    </script>
+}

@@ -1,0 +1,122 @@
+﻿@using Books.Models
+@using Books.Resources
+@{
+    var user = (User)TempData["UserInfo"];
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f9f9f9;
+        }
+
+        .navbar {
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-link {
+            color: #ffffff !important;
+            transition: color 0.3s;
+        }
+
+            .nav-link:hover {
+                color: #ffc107 !important;
+            }
+
+        .language-switch {
+            margin-left: auto;
+            color: #fff;
+        }
+
+        .container.body-content {
+            padding-top: 30px;
+            padding-bottom: 50px;
+            min-height: 80vh;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+            footer p {
+                margin: 0;
+            }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/">📚 My Book App</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">@Html.ActionLink("Categories", "Index", "Category", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Products", "Index", "Products", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Customers", "Index", "Customer", null, new { @class = "nav-link" })</li>
+                    <li class="nav-item">@Html.ActionLink("Invoices", "Index", "Invoice", null, new { @class = "nav-link" })</li>
+                    @if (user != null)
+                    {
+                        <li class="nav-item">@Html.ActionLink("تسجيل الخروج", "Logout", "Users", null, new { @class = "nav-link" })</li>
+                    }
+                </ul>
+                <div class="language-switch d-flex align-items-center">
+                    <a class="nav-link" href="/Language/ChangeLanguage?lang=ar">عربي</a>
+                    <span class="text-white px-1">|</span>
+                    <a class="nav-link" href="/Language/ChangeLanguage?lang=en">English</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container body-content">
+        @RenderBody()
+    </div>
+
+    <footer>
+        <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+    <script>
+        let inactivityTime = 1000000;
+        let timeout;
+
+        function resetTimer() {
+            clearTimeout(timeout);
+            timeout = setTimeout(showPrompt, inactivityTime);
+        }
+
+        function showPrompt() {
+            let userResponse = confirm("هل تريد الاستمرار في تصفح الموقع؟");
+            if (!userResponse) {
+                window.close();
+            } else {
+                resetTimer();
+            }
+        }
+
+        window.onload = resetTimer;
+        document.addEventListener("mousemove", resetTimer);
+        document.addEventListener("keydown", resetTimer);
+        document.addEventListener("scroll", resetTimer);
+        document.addEventListener("click", resetTimer);
+    </script>
+</body>
+</html>

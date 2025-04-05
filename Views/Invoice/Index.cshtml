@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Books.Models.Invoice>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Invoice	</th>
+                <th>Invoice Date</th>
+                <th>Customer</th>
+                <th>Total</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var invoice in Model)
+            {
+                <tr>
+                    <td>@invoice.InvoiceId</td>
+                    <td>@invoice.InvoiceDate</td>
+                    <td>@invoice.Customer.FirstName</td>
+                    <td>@invoice.TotalAmount()</td>
+                    <td>
+                        <a href="@Url.Action("Edit", "Invoice", new { id = invoice.InvoiceId })" class="btn btn-primary">
+                            <i class="icofont-ui-edit"></i>
+                            Edit
+                        </a>
+                        <a href="javascript:;" class="btn btn-danger js-delete" data-id="@invoice.InvoiceId">
+                            <i class="icofont-ui-close"></i>
+                            Delete
+                        </a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-warning" role="alert">
+        No bookings available at the moment.
+
+    </div>
+}

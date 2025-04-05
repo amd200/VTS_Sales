@@ -1,0 +1,93 @@
+﻿@model IEnumerable<Books.Models.Category>
+
+@{
+    ViewBag.Title = "Categories";
+}
+
+<h2>Categories</h2>
+<a href="@Url.Action("Create")" class="btn btn-primary">Add New</a>
+
+
+    @if (Model.Any())
+    {
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>IsActive</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var category in Model)
+                {
+                    <tr>
+                        <td>@Html.ActionLink(category.Name, "Details", "Category", new { id = category.Id }, null)</td>
+                        <td>@(category.IsActive == true ? "نعم" : "لا")</td>
+                        <td>
+                            <a href="@Url.Action("Edit", "Category", new { id = category.Id })" class="btn btn-primary">
+                                <i class="icofont-ui-edit"></i>
+                                Edit
+                            </a>
+                            <a href="javascript:;" class="btn btn-danger js-delete" data-id="@category.Id">
+                                <i class="icofont-ui-close"></i> Delete
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-warning" role="alert">
+            No Categories available at the moment.
+
+        </div>
+    
+}
+
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+    $(document).ready(function () {
+        $('.js-delete').on('click', function () {
+            var btn = $(this);
+            var id = btn.data('id');
+
+            Swal.fire({
+                title: "هل أنت متأكد؟",
+                text: "لن تتمكن من التراجع عن هذا!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#d33",
+                cancelButtonColor: "#3085d6",
+                confirmButtonText: "نعم، احذفه!",
+                cancelButtonText: "إلغاء"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    $.ajax({
+                        url: '@Url.Action("Delete", "Category")',
+                        type: 'POST',
+                        data: { id: id },
+                        success: function (response) {
+                            if (response.success) {
+                                btn.closest('tr').fadeOut(500, function () {
+                                    $(this).remove();
+                                });
+                                Swal.fire("تم الحذف!", "تم حذف الصنف بنجاح.", "success");
+                            } else {
+                                Swal.fire("خطأ!", response.message || "حدث خطأ أثناء الحذف.", "error");
+                            }
+                        },
+                        error: function () {
+                            Swal.fire("خطأ!", "حدث خطأ أثناء الاتصال بالخادم.", "error");
+                        }
+                    });
+                }
+            });
+        });
+    });
+    </script>
+}
